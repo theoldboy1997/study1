@@ -1,45 +1,26 @@
-html {
-  font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
-  background-size: cover;
+body{
+    background-color: #ffff00;
 }
-body,html {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+ul{
+    margin:0;
+    list-style-type: square;
 }
-.keys {
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-     
+video-list_item{
+    width:calc(25%-2rem);
+    margin-bottom:2rem;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.2);
+    transition:all 0.2s;
+    -webkit-transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -ms-transition:all 0.2s;
+    -o-transition:all 0.2s;
 }
-.key {
-  border: .4rem solid black; 
-  margin: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem .5rem;
-  transition: all .07s ease;
-  width: 10rem;  
-  color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black; 
-}
-.playing {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
-}
-kbd { 
-  display: block;
-  font-size: 5rem;
-}
-
-.sound {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  color: #ffc600;
+.video-list{
+    display:flex;
+    padding:0;
+    flex-wrap:wrap;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
 }
